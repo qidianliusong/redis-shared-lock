@@ -1,0 +1,28 @@
+server:
+
+  port: 8980
+#  context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+
+debug: false
+
+spring:
+
+#    profiles:
+#        active: test,module,common
+
+    main:
+        banner-mode: "off"
+    redis:
+        database: 0
+        hostName: your ip
+        port: 2001
+        password: your pass word
+        pool:
+          maxActive: 50
+          maxWait: 3000
+          maxIdle: 30
+          minIdle: 10
+          timeout: 1000
+        defaultExpiration: 3600
